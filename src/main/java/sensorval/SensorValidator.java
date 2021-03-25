@@ -26,7 +26,7 @@ public class SensorValidator
     	return (values!=null && values.size()>0);
     }
     
-  public static boolean validateReadings(List<Double> values,double maxInterval){
+  public static boolean validateReadings(List<Double> values,Double maxInterval){
     	int lastButOneIndex = values.size() - 1;
         for(int i = 0; i < lastButOneIndex; i++) {
             if(checkSuddenJump(values,i,maxInterval)) {
