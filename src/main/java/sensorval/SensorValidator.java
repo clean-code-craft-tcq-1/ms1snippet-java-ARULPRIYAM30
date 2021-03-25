@@ -7,7 +7,7 @@ public class SensorValidator {
 	static final double MAX_CURRENT_VALUE = 0.1;
 
 	private static boolean checkSuddenHighValue(double value, double nextValue, double maxValue) {
-		return (nextValue - value > maxDelta);
+		return (nextValue - value > maxValue);
 	}
 
 	public static boolean validateSOCreadings(List<Double> values) {
